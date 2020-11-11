@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha --exit",
-     "test-with-coverage": "nyc --reporter=lcov mocha --exit"
+     "test-with-coverage": "mocha test --reporter mocha-junit-reporter --reporter-options mochaFile=file.xml"
   },
   "repository": {
     "type": "git",
