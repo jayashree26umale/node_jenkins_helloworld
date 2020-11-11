@@ -16,9 +16,7 @@ describe('GET /' ,function(){
         request(app).get('/').expect('Hello World!',done);
        
     })
-    after(function() {
-    process.exit()
-  });
+
   
 })
 
