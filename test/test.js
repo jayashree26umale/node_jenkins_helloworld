@@ -16,3 +16,5 @@ describe('GET /' ,function(){
         request(app).get('/').expect('Hello World!',done);
     })
 })
+
+process.exit()
