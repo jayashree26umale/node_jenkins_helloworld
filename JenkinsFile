@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('build'){
             steps{
-                 sh "rm -rf node_modules && npm install"
+                 sh "sudo npm install --global cross-env"
             }
         }
         stage('test'){
