@@ -1,15 +1,15 @@
 pipeline{
     agent any
     stages{
-        step("build")
+        steps("build")
         {
             sh "npm install"
         }
-        step("test")
+        steps("test")
         {
             sh "npm run test"
         }
-        step("deploy")
+        steps("deploy")
         {
             sh "node index.js"
         }
