@@ -3,17 +3,17 @@ pipeline{
     stages{
         stage('build'){
             steps{
-                 sh "sudo npm install --global cross-env"
+                 echo "Build"
             }
         }
         stage('test'){
             steps{
-                 sh "npm run test"
+                echo "test"
             }
         }
         stage('deploy'){
             steps{
-                 sh "node index.js"
+                 echo "deploy"
             }
         }
     }
