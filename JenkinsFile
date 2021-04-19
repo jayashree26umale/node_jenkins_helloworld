@@ -1,9 +1,10 @@
 node {
+    def customImage
     checkout scm
 
     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
 
-        def customImage = docker.build("/hello/my-image")
+        customImage = docker.build("/hello/my-image")
 
         /* Push the container to the custom Registry */
         customImage.push()
