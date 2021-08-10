@@ -1,0 +1,5 @@
+#!/bin/bash
+yum update
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+yum install nodejs -y
+npm update
