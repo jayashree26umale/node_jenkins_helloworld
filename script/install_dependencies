@@ -1,5 +1,5 @@
 #!/bin/bash
-apt-get update
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-apt-get install nodejs -y
-npm update
+sudo apt update
+sudo curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt-get install nodejs -y
+sudo npm update
